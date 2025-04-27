@@ -1,4 +1,10 @@
-app = 'wagtail-news-template'
+# fly.toml app configuration file generated for wagtail-news-template-withered-frog-4411 on 2025-04-27T11:39:38-07:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'wagtail-news-template-withered-frog-4411'
+primary_region = 'lax'
 console_command = '/bin/bash'
 
 [build]
@@ -17,7 +23,7 @@ console_command = '/bin/bash'
 [http_service]
   internal_port = 8000
   force_https = true
-  auto_stop_machines = true
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
 
@@ -32,5 +38,5 @@ console_command = '/bin/bash'
   cpus = 1
 
 [[statics]]
-  guest_path = "/data/media"
-  url_prefix = "/media"
+  guest_path = '/data/media'
+  url_prefix = '/media'
