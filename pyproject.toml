@@ -1,0 +1,16 @@
+[project]
+name = "my-wagtail"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dj-database-url>=2.3.0",
+    "django>=4.2,<5.2",
+    "django-storages[s3]>=1.14.6",
+    "gunicorn==23.0.0",
+    "psycopg[binary]>=3.2.6",
+    "wagtail>=6.4,<6.5",
+    "wagtail-storages>=2.0",
+    "whitenoise>=6.9.0",
+]
